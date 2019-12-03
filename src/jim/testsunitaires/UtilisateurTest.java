@@ -87,7 +87,7 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetNumTel() {
-		utilisateur1.setNumTel("00.00.00.00.00");;
+		utilisateur1.setNumTel("00.00.00.00.00");
 		assertEquals("Test setNumTel", "00.00.00.00.00", utilisateur1.getNumTel());
 	}
 
@@ -98,12 +98,8 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetNiveau() {
-<<<<<<< HEAD
-		fail("Not yet implemented"); 
-=======
 		utilisateur1.setNiveau(2);
-	    assertEquals("Test setpseudo", 2, utilisateur1.getNiveau());	
->>>>>>> b9d5d777c382cfbac42d1a5a070c7b28e428c62c
+	    assertEquals("Test setpseudo", 2, utilisateur1.getNiveau());
 	}
 
 	@Test
