@@ -33,13 +33,15 @@ public class UtilisateurTest {
 	}
 
 	@Test
-	public void testGetId() {
-		fail("Not yet implemented");	
+	public void testGetId() {		
+		assertEquals(111, utilisateur2.getId());
 	}
 
 	@Test
-	public void testSetId() {
-		fail("Not yet implemented");
+	public void getSetId() {
+		utilisateur1.setId(112);
+		
+		assertEquals(112, utilisateur1.getId());
 	}
 
 	@Test
@@ -54,7 +56,7 @@ public class UtilisateurTest {
 
 	@Test
 	public void testGetMdpSha1() {
-		fail("Not yet implemented");
+		assertEquals("abcdef",utilisateur2.getMdpSha1());
 	}
 
 	@Test
@@ -84,7 +86,7 @@ public class UtilisateurTest {
 
 	@Test
 	public void testGetNiveau() {
-		fail("Not yet implemented");
+		assertEquals(1,utilisateur2.getNiveau());
 	}
 
 	@Test
