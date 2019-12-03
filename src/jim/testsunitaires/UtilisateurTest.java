@@ -89,7 +89,7 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetNiveau() {
-		fail("Not yet implemented");
+		fail("Not yet implemented"); 
 	}
 
 	@Test
