@@ -59,27 +59,32 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetMdpSha1() {
-		fail("Not yet implemented");
+		utilisateur1.setMdpSha1("MDP2ouf");
+		assertEquals("Test SetMdpSha1", "MDP2ouf", utilisateur1.getMdpSha1());
 	}
 
 	@Test
 	public void testGetAdrMail() {
-		fail("Not yet implemented");
+		assertEquals("Test getAdresse", "", utilisateur1.getAdrMail());
+		assertEquals("Test getPseudo", "toto@free.fr", utilisateur2.getAdrMail());;
 	}
 
 	@Test
 	public void testSetAdrMail() {
-		fail("Not yet implemented");
+		utilisateur1.setAdrMail("toto@free.fr");;
+		assertEquals("Test setPseudo", "toto@free.fr", utilisateur1.getAdrMail());
 	}
 
 	@Test
 	public void testGetNumTel() {
-		fail("Not yet implemented");
+		assertEquals("Test GetNumTel", "", utilisateur1.getNumTel());
+		assertEquals("Test GetNumTel", "11.22.33.44.55", utilisateur2.getNumTel());
 	}
 
 	@Test
 	public void testSetNumTel() {
-		fail("Not yet implemented");
+		utilisateur1.setNumTel("00.00.00.00.00");;
+		assertEquals("Test setNumTel", "00.00.00.00.00", utilisateur1.getNumTel());
 	}
 
 	@Test
