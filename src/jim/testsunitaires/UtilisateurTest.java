@@ -33,13 +33,15 @@ public class UtilisateurTest {
 	}
 
 	@Test
-	public void testGetId() {
-		fail("Not yet implemented");	
+	public void testGetId() {		
+		assertEquals(111, utilisateur2.getId());
 	}
 
 	@Test
-	public void testSetId() {
-		fail("Not yet implemented");
+	public void getSetId() {
+		utilisateur1.setId(112);
+		
+		assertEquals(112, utilisateur1.getId());
 	}
 
 	@Test
@@ -56,42 +58,52 @@ public class UtilisateurTest {
 
 	@Test
 	public void testGetMdpSha1() {
-		fail("Not yet implemented");
+		assertEquals("abcdef",utilisateur2.getMdpSha1());
 	}
 
 	@Test
 	public void testSetMdpSha1() {
-		fail("Not yet implemented");
+		utilisateur1.setMdpSha1("MDP2ouf");
+		assertEquals("Test SetMdpSha1", "MDP2ouf", utilisateur1.getMdpSha1());
 	}
 
 	@Test
 	public void testGetAdrMail() {
-		fail("Not yet implemented");
+		assertEquals("Test getAdresse", "", utilisateur1.getAdrMail());
+		assertEquals("Test getPseudo", "toto@free.fr", utilisateur2.getAdrMail());;
 	}
 
 	@Test
 	public void testSetAdrMail() {
-		fail("Not yet implemented");
+		utilisateur1.setAdrMail("toto@free.fr");;
+		assertEquals("Test setPseudo", "toto@free.fr", utilisateur1.getAdrMail());
 	}
 
 	@Test
 	public void testGetNumTel() {
-		fail("Not yet implemented");
+		assertEquals("Test GetNumTel", "", utilisateur1.getNumTel());
+		assertEquals("Test GetNumTel", "11.22.33.44.55", utilisateur2.getNumTel());
 	}
 
 	@Test
 	public void testSetNumTel() {
-		fail("Not yet implemented");
+		utilisateur1.setNumTel("00.00.00.00.00");;
+		assertEquals("Test setNumTel", "00.00.00.00.00", utilisateur1.getNumTel());
 	}
 
 	@Test
 	public void testGetNiveau() {
-		fail("Not yet implemented");
+		assertEquals(1,utilisateur2.getNiveau());
 	}
 
 	@Test
 	public void testSetNiveau() {
+<<<<<<< HEAD
 		fail("Not yet implemented"); 
+=======
+		utilisateur1.setNiveau(2);
+	    assertEquals("Test setpseudo", 2, utilisateur1.getNiveau());	
+>>>>>>> b9d5d777c382cfbac42d1a5a070c7b28e428c62c
 	}
 
 	@Test
