@@ -93,33 +93,42 @@ public class UtilisateurTest {
 	}
 
 	@Test
-	public void testGetDateCreation() {
-		fail("Not yet implemented");
+	public void testGetDateCreation() throws ParseException {
+		Date uneDateCreation = Outils.convertirEnDateHeure("21/06/2016 14:00:00");
+		assertEquals(uneDateCreation,utilisateur2.getDateCreation());
 	}
 
 	@Test
 	public void testSetDateCreation() throws ParseException {
-		fail("Not yet implemented");
+		Date uneDate = new Date();
+		utilisateur2.setDateCreation(uneDate);
+		
+		assertEquals("Test SetDateDerniereTrace",uneDate,utilisateur2.getDateCreation());
 	}
 
 	@Test
 	public void testGetNbTraces() {
-		fail("Not yet implemented");
+		assertEquals("testSetNbTraces",3,utilisateur2.getNbTraces());
 	}
 
 	@Test
 	public void testSetNbTraces() {
-		fail("Not yet implemented");
+		utilisateur2.setNbTraces(5);
+		assertEquals(5, utilisateur2.getNbTraces());
 	}
 
 	@Test
-	public void testGetDateDerniereTrace() {
-		fail("Not yet implemented");
+	public void testGetDateDerniereTrace() throws ParseException {
+		Date uneDateDerniereTrace = Outils.convertirEnDateHeure("28/06/2016 14:00:00");
+		assertEquals("testGetDateDerniereTrace",uneDateDerniereTrace,utilisateur2.getDateDerniereTrace());
 	}
 
 	@Test
 	public void testSetDateDerniereTrace() throws ParseException {
-		fail("Not yet implemented");
+		Date uneDate = new Date();
+		utilisateur2.setDateDerniereTrace(uneDate);
+		
+		assertEquals("Test SetDateDerniereTrace",uneDate,utilisateur2.getDateDerniereTrace());
 	}
 
 	@Test
