@@ -44,12 +44,14 @@ public class UtilisateurTest {
 
 	@Test
 	public void testGetPseudo() {
-		fail("Not yet implemented");
+	    assertEquals("Test getPseudo", "toto", utilisateur2.getPseudo());
 	}
 
 	@Test
 	public void testSetPseudo() {
-		fail("Not yet implemented");
+		String Pseudo = "tata";
+		utilisateur1.setPseudo(Pseudo);
+	    assertEquals("Test setPseudo", Pseudo, utilisateur1.getPseudo());
 	}
 
 	@Test
@@ -94,7 +96,8 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetNiveau() {
-		fail("Not yet implemented");
+		utilisateur1.setNiveau(2);
+	    assertEquals("Test setpseudo", 2, utilisateur1.getNiveau());	
 	}
 
 	@Test
