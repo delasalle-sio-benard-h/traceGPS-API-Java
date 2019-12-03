@@ -91,7 +91,8 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetNiveau() {
-		fail("Not yet implemented");
+		utilisateur1.setNiveau(2);
+	    assertEquals("Test setpseudo", 2, utilisateur1.getNiveau());	
 	}
 
 	@Test
