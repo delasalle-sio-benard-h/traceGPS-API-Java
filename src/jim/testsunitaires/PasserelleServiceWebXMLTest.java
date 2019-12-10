@@ -31,12 +31,16 @@ public class PasserelleServiceWebXMLTest {
 		
 	@Test
 	public void testCreerUnUtilisateur() {
-		fail("Not yet implemented");
+		String msg = PasserelleServicesWebXML.creerUnUtilisateur("test", "bergeault.nico@gmail.com", "0782542057");
+		assertEquals("Erreur : pseudo trop court (8 car minimum) ou déjà existant.", msg);
+		
+
+		msg = PasserelleServicesWebXML.creerUnUtilisateur("NicolasBergeault", "bergeault.nico@gmail.com", "0782542057");
+		assertEquals("Enregistrement effectué ; vous allez recevoir un courriel avec votre mot de passe.", msg);
 	}
 	
 	@Test
 	public void testSupprimerUnUtilisateur() {
-		fail("Not yet implemented");	
 	}
 	
 	@Test
