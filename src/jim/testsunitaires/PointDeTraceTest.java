@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import jim.classes.Outils;
 import jim.classes.PointDeTrace;
-
+ 
 public class PointDeTraceTest {
 
 	private PointDeTrace point1, point2, point3, point4, point5;  
